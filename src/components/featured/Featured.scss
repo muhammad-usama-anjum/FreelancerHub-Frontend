@@ -1,0 +1,354 @@
+// // .featured {
+// //     height: 600px;
+// //     display: flex;
+// //     justify-content: center;
+// //     background-color: #013914;
+// //     color: white;
+  
+// //     .container {
+// //       width: 1400px;
+// //       display: flex;
+// //       align-items: center;
+  
+// //       .left {
+// //         display: flex;
+// //         flex-direction: column;
+// //         gap: 30px;
+  
+// //         h1 {
+// //           font-size: 50px;
+  
+// //           span {
+// //             font-style: italic;
+// //             font-weight: 300;
+// //           }
+// //         }
+  
+// //         .search {
+// //           background-color: white;
+// //           border-radius: 5px;
+// //           display: flex;
+// //           align-items: center;
+// //           justify-content: space-between;
+// //           overflow: hidden;
+  
+// //           .searchInput {
+// //             display: flex;
+// //             align-items: center;
+// //             gap: 10px;
+// //             img {
+// //               width: 20px;
+// //               height: 20px;
+// //               margin: 10px;
+// //             }
+  
+// //             input {
+// //               border: none;
+// //               outline: none;
+// //               padding:0 10px 0 10px;
+// //               width: 700px;
+// //               height: 50px;
+// //               font-size: larger;
+// //               &::placeholder {
+// //                 color: gray;
+// //               }
+// //             }
+// //           }
+  
+// //           button {
+// //             width: 120px;
+// //             height: 50px;
+// //             border: none;
+// //             background-color: #1dbf73;
+// //             color: white;
+// //             align-self: flex-end;
+// //             cursor: pointer;
+// //           }
+// //         }
+  
+// //         .popular {
+// //           display: flex;
+// //           align-items: center;
+// //           gap: 10px;
+  
+// //           span {
+// //             width: max-content;
+// //           }
+  
+// //           button {
+// //             width: max-content;
+// //             color: white;
+// //             border: 1px solid white;
+// //             padding: 5px 10px;
+// //             border-radius: 20px;
+// //             background-color: transparent;
+// //             font-size: 14px;
+// //           }
+// //         }
+// //       }
+  
+// //       .right {
+// //         height: 100%;
+// //         img {
+// //           height: 100%;
+// //           object-fit: contain;
+// //         }
+// //       }
+// //     }
+// //   }
+
+// .featured {
+//   height: 600px;
+//   display: flex;
+//   justify-content: center;
+//   background-color: #dad5d5;
+//   color: #333333;
+
+//   .container {
+//     width: 1400px;
+//     display: flex;
+//     align-items: center;
+
+//     .left {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 30px;
+
+//       h1 {
+//         font-size: 50px;
+
+//         span {
+//           font-style: italic;
+//           font-weight: 300;
+//           color: #3498db;
+//         }
+//       }
+
+//       .search {
+//         background-color: white;
+//         border-radius: 5px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         overflow: hidden;
+
+//         .searchInput {
+//           display: flex;
+//           align-items: center;
+//           gap: 10px;
+//           img {
+//             width: 20px;
+//             height: 20px;
+//             margin: 10px;
+//           }
+
+//           input {
+//             color: #333333;
+//             border: none;
+//             outline: none;
+//             padding:0 10px 0 10px;
+//             width: 700px;
+//             height: 50px;
+//             font-size: larger;
+//             &::placeholder {
+//               color: gray;
+//             }
+//           }
+//         }
+
+//         button {
+//           width: 120px;
+//           height: 50px;
+//           border: none;
+//           background-color: #0a68a7;
+//           color: white;
+//           align-self: flex-end;
+//           cursor: pointer;
+//           &:hover{
+//             background-color: #034572;
+//             color: white;
+//             transition: all 0.5s;
+//           }
+//         }
+//       }
+
+//       .popular {
+//         display: flex;
+//         align-items: center;
+//         gap: 10px;
+
+//         span {
+//           width: max-content;
+//         }
+
+//         button {
+//           width: max-content;
+//           color: #3498db;
+//           border: 1px solid #3498db;
+//           padding: 5px 10px;
+//           border-radius: 20px;
+//           background-color: transparent;
+//           font-size: 14px;
+//         }
+//       }
+//     }
+
+//     .right {
+//       height: 100%;
+//       img {
+//         height: 100%;
+//         object-fit: contain;
+//       }
+//     }
+//   }
+// }
+
+.featured {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  .container {
+      display: flex;
+
+      .left {
+          padding: 0 40px;
+          width: 750px;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+          h1 {
+              font-size: 48px;
+              line-height: 56px;
+
+              span {
+                  font-style: italic;
+                  font-weight: 300;
+                  color: #3498db;
+              }
+
+              @media screen and (max-width: 900px) {
+                  font-size: 45px;
+              }
+
+              @media screen and (max-width: 600px) {
+                  font-size: 32px;
+              }
+          }
+
+          .search {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-radius: 5px;
+              color: red;
+              .searchInput {
+                  background-color: #fff;
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  border-radius: 5px 0px 0px 5px;
+                  
+                  img {
+                      width: 20px;
+                      height: 20px;
+                      margin: 10px;
+                  }
+                  
+                  input {
+                      width: 100%;
+                      height: 48px;
+                      font-size: larger;
+                      border: none;
+                      outline: none;
+                      padding-left: 20px;
+                  }
+
+                  @media screen and (max-width: 900px) {
+                      border-radius: 5px;
+                  }
+              }
+
+              button {
+                  width: 120px;
+                  height: 48px;
+                  font-size: 16px;
+                  border: none;
+                  background-color: #3498db;
+                  color: #fff;
+                  cursor: pointer;
+                  border-radius: 0 5px 5px 0;
+
+                  @media screen and (max-width: 900px) {
+                      width: 100%;
+                      border-radius: 5px;
+                  }
+              }
+
+              @media screen and (max-width: 900px) {
+                  flex-direction: column;
+                  gap: 10px;
+              }
+          }
+
+          .popular {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              span {
+
+              }
+
+              button {
+                  color: #fff;
+                  background-color: transparent;
+                  border: 1px solid #fff;
+                  padding: 5px 10px;
+                  border-radius: 20px;
+                  font-size: 14px;
+                  cursor: pointer;
+
+                  &:hover {
+                      background-color: #fff;
+                      color: #000;
+                  }
+              }
+
+              @media screen and (max-width: 900px) {
+                  display: none;
+              }
+          }
+
+          @media screen and (max-width: 900px) {
+              top: 100px;
+              width: 80%;
+              margin: auto;
+          }
+      }
+
+      .right {
+          img {
+              width: 100%;
+              position: absolute;
+              height: 65%;
+              z-index: -1;
+              top: 80px;
+              right: 0;
+              object-fit: cover;
+              @media screen and (max-width: 900px) {
+                  display: none;
+              }
+          }
+      }
+  }
+
+  @media screen and (max-width: 900px) {
+      background-color: #1A1B1D;
+      height: 400px;
+      justify-content: center;
+  }
+}
