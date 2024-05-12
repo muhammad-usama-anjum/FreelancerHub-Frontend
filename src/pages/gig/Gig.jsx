@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
-import Reviews from "../../components/reviews/Reviews";
+import Reviews from "../../components/Reviews/Reviews";
 
 function Gig() {
   const { id } = useParams();
