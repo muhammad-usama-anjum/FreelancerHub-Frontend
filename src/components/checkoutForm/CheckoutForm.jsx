@@ -57,7 +57,7 @@ const CheckoutForm = () => {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: "https://freelancer-hub-frontend-git-main-usamas-projects-d2e4dbdb.vercel.app/success",
+        return_url: "https://freelancer-hub-frontend/success",
       },
     });
 
